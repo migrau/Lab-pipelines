@@ -1,8 +1,8 @@
 # Lab pipelines
 A mix of pipelines for a variety of different tasks.
 
-### phylogeny wih/without downsampling per region.
-`src/tree.pipe.snk` : Given multiple fasta files (one per region of interest, e.g. Europe, Africa, Asia, etc), the pipeline downsamples the fasta files selected (i.e. it reduces the dataset to `x` samples per month) and keeps a selected fasta file without downsampling (e.g. Australia). Next, it generates the required metadata files and perform a maximum likelihood phylogenetic analysis (RAxML) and an optimized time-scaled phylogeny (TreeTime)
+### phylogeny with/without downsampling per region.
+`src/tree.pipe.snk` : Given multiple fasta files (one per region of interest, e.g. Europe, Africa, Asia, etc), the pipeline downsamples the fasta files selected (i.e. it reduces the dataset to `x` samples per month) and keeps a selected fasta file without downsampling (e.g. Australia). Next, it generates the required metadata files and performs a maximum likelihood phylogenetic analysis (RAxML) and an optimized time-scaled phylogeny (TreeTime)
 
 **Input files:** (input1) Folder with fasta samples (to be downsampled) and (input2) Single fasta to keep as it is. 
 
