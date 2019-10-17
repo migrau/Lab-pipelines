@@ -1,9 +1,3 @@
-#How to run
-#snakemake --snakefile tree.pipe.py -j 8 --config ifa=gisaid/ nsamples=5 ausfa=gisaid/australia/h1n1pm_australia.fasta out=/home/miguelgrau/projects/seasonal_influenza_pipe/out_pipe/ -np 
-
-#Old samples (to_check)
-#snakemake --snakefile tree.pipe.py -j 8 --config ifa=gisaid2/ nsamples=5 ausfa=gisaid2/australia/h1n1pm_australia.fasta out=/home/miguelgrau/projects/seasonal_influenza_pipe/out_pipe_old/
-
 #############################################################################
 #                                                                           #
 # Description                                                               #
@@ -52,7 +46,7 @@ nsamplesPerMonth=config["nsamples"]
 #threads for raxml and mafft (alignment)
 threads=4
 #RAxML bootstrap
-bs=2
+bs=20
 
 #mafft, raxml, treetime should exist in $PATH
 
